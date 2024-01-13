@@ -28,4 +28,8 @@ def draw_koch_curve(order, size=300):
     window.mainloop()
 
 # Виклик функції
-draw_koch_curve(3)
+try:
+    i = int(input('Please input recursion level number >>> '))
+    draw_koch_curve(i)
+except:
+    print('Error: recursion level incorrect...')
